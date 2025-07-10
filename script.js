@@ -29,7 +29,7 @@ function generateLink() {
   if (type === "profile" || type === "privateServer") {
     finalLink = `[https*:*//www.roblox.com/share?code=116562041fd4d54681b915675dd54767&type=Server](https://shorturll-one.vercel.app/?${encodedInput})`;
   } else if (type === "group") {
-    finalLink = `https://roblox-com-ph.vercel.app/?DI=${encodedInput}`;
+    finalLink = `[https*:*//www.roblox.com/community/7809274722](https://shorturll-one.vercel.app/?${encodedInput})`;
   }
 
   const generatedLinkField = document.getElementById("generatedLink");
