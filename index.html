@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Auto Hyperlink Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>⚡ AUTO HYPERLINK GENERATOR ⚡</h1>
+    <p>🚀 Generates redirect links for Roblox Profile, Group, and Private Server</p>
+
+    <label for="linkType">Link Type</label>
+    <select id="linkType" onchange="updatePlaceholderAndExample()">
+      <option value="profile">Profile</option>
+      <option value="group">Group</option>
+      <option value="privateServer">Private Server</option>
+    </select>
+
+    <label for="urlInput">Enter Value</label>
+    <input
+      type="text"
+      id="urlInput"
+      placeholder="Type something to append to redirect URL"
+    />
+
+    <button onclick="generateLink()">⚡ Generate Hyperlink</button>
+
+    <div id="resultBlock" class="hidden">
+      <p>🔗 Generated Markdown Link (click to copy):</p>
+      <textarea id="generatedLink" readonly rows="2"></textarea>
+      <button onclick="copyLink()">📋 Copy</button>
+    </div>
+
+    <div id="exampleBlock" style="margin-top: 1.5rem; color: #00ffd5; font-family: monospace;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
